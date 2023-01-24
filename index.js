@@ -7,9 +7,6 @@ const deleteBtn = document.getElementById('delete-btn');
 const leadsLocalStorage = JSON.parse(localStorage.getItem('myLeads'))
 const tabBtn = document.getElementById('tab-btn');
 
-const tabs = [
-    {url:"https://www.linkedin.com/in/per-harald-borgen/"}
-]
 
 tabBtn.addEventListener("click", function(){    
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
